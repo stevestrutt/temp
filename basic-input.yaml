@@ -1,0 +1,7 @@
+
+# Resource Group module input values
+# none 
+
+# COS module input values
+cos_instance_name: Blueprint-basic
+cos_storage_plan: lite

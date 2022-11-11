@@ -1,0 +1,36 @@
+{
+    "name": "Blueprint Basic",
+    "schema_version": "1.0.0",
+    "source": {
+        "source_type": "git_hub",
+        "git": {
+            "git_repo_url": "https://github.com/Cloud-Schematics/blueprint-basic-example",
+            "git_repo_folder": "basic-blueprint.yaml",
+            "git_branch": "main"
+        }
+    },
+    "config": [
+        {
+            "source": {
+                "source_type": "git_hub",
+                "git": {
+                    "git_repo_url": "https://github.com/Cloud-Schematics/blueprint-basic-example",
+                    "git_repo_folder": "basic-input.yaml",
+                    "git_branch": "main"
+                }
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "name": "cos_instance_name",
+            "value": "Blueprint-basic"
+        },
+        {
+            "name": "cos_storage_plan",
+            "value": "lite"
+        }
+    ],
+    "description": "Deploys a simple two module blueprint",
+    "resource_group": "Default"
+}
